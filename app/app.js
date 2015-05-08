@@ -1,5 +1,6 @@
 var lisaSite = angular.module('lisaSite',['ngRoute']);
-lisaSite.config[('$routeProvider', function($routeProvider){
+
+lisaSite.config(function($routeProvider){
 $routeProvider
 .when ('/about',{
 	templateUrl:'partials/about.html',
@@ -25,7 +26,7 @@ $routeProvider
 	templateUrl:'partials/contact.html',
 	controller:'design'
 
-});
+})
 }
 
-});
+);
